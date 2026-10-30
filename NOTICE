@@ -1,0 +1,18 @@
+Motion Video Editor
+Copyright (c) 2026 Ahmii Labs
+
+This product is licensed under the MIT License (see LICENSE).
+
+Third-party components
+----------------------
+The fonts bundled in assets/fonts/ are NOT covered by the MIT License above.
+They remain under the SIL Open Font License 1.1 (https://openfontlicense.org):
+
+  Poppins                                             (c) The Poppins Project Authors
+  Noto Nastaliq Urdu, Noto Naskh Arabic,
+  Noto Sans Devanagari                                (c) The Noto Project Authors
+
+See assets/fonts/LICENSE-FONTS.txt for details.
+
+"Ahmii Labs" and the Ahmii Labs logo/branding shown in the demo videos and
+previews (demo/) are the property of Ahmii Labs.

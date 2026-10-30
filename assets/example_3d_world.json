@@ -1,0 +1,26 @@
+{
+  "output": "example_3d_world.mp4",
+  "aspect": "16:9", "resolution": 720, "theme": "cyber", "sfx": true, "auto_duration": false,
+  "fx": [{"type": "vignette"}, {"type": "grain"}],
+  "scenes": [
+    {"type": "world3d", "duration": 4.5, "bg_style": "stars", "bloom": 0.6,
+     "view": {"preset": "three_quarter", "dist": 6.0, "target": [0, 1, 0]},
+     "text": "STICKMAN + PIXEL-MAN", "size": 52, "text_y": 0.9,
+     "actors": [
+       {"kind": "stickman", "color": [0, 240, 255], "path": [[-4.6, 0], [-1.3, 0]], "walk_speed": 1.8, "speed": 0.92,
+        "actions": [{"motion": "walk", "dur": 1.9}, {"motion": "wave"}],
+        "say": [{"text": "Hi! I'm a stickman", "start": 2.1, "dur": 2.0}]},
+       {"kind": "pixelman", "x": 1.7, "yaw": -25, "color": [255, 46, 151], "enter": "drop", "start": 0.8,
+        "actions": [{"motion": "idle", "dur": 2.4}, {"motion": "wave"}],
+        "say": "Hey! I'm a pixel-man"}
+     ]},
+    {"type": "world3d", "duration": 4.0, "bg_style": "pixel_sky", "transition": "pixelate",
+     "view": {"preset": "iso", "dist": 9.2, "target": [0, 0.8, 0]}, "pixel": 4, "floor": "checker", "floor_ext": 10,
+     "actors": [
+       {"kind": "pixelman", "x": -1.8, "z": 0.4, "color": [0, 240, 255], "motion": "dance", "enter": "drop"},
+       {"kind": "pixelman", "x": 1.8, "z": 0.4, "color": [255, 210, 80], "motion": "jump", "enter": "drop", "start": 0.3},
+       {"kind": "voxel_text", "text": "3D", "size": 1.4, "depth": 3, "z": -2.4, "colors": [[255, 46, 151], [0, 240, 255]], "spin": 40},
+       {"kind": "tree", "x": -3.6, "z": -2.0, "size": 1.2}
+     ]}
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "output": "../videos/ahmii_labs_3d_demo_2k.mp4",
+  "aspect": "16:9",
+  "resolution": 1440,
+  "fps": 30,
+  "auto_duration": false,
+  "theme": {
+    "accent": [
+      255,
+      46,
+      151
+    ],
+    "text": [
+      255,
+      255,
+      255
+    ],
+    "muted": [
+      150,
+      235,
+      255
+    ],
+    "bgs": [
+      [
+        [
+          10,
+          2,
+          28
+        ],
+        [
+          58,
+          8,
+          104
+        ]
+      ],
+      [
+        [
+          6,
+          4,
+          30
+        ],
+        [
+          96,
+          14,
+          120
+        ]
+      ]
+    ]
+  },
+  "sfx": true,
+  "transition": "glitch",
+  "fx": [
+    {
+      "type": "vignette",
+      "strength": 0.55
+    },
+    {
+      "type": "grain",
+      "strength": 0.045
+    }
+  ],
+  "scenes": [
+    {
+      "type": "kinetic",
+      "text": "NOW IN 3D",
+      "preset": "scatter",
+      "size": 150,
+      "duration": 2.6,
+      "bg": 0,
+      "bg_style": "grid",
+      "highlight": {
+        "3D": [
+          0,
+          240,
+          255
+        ]
+      },
+      "camera": "push_in",
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.9
+        },
+        {
+          "type": "rgb_split",
+          "start": 0.0,
+          "dur": 0.5,
+          "pulse": true,
+          "distance": 16
+        },
+        {
+          "type": "glitch",
+          "start": 0.1,
+          "dur": 0.35
+        }
+      ]
+    },
+    {
+      "type": "world3d",
+      "duration": 4.4,
+      "bg": 1,
+      "bg_style": "stars",
+      "transition": "glitch",
+      "bloom": 0.6,
+      "view": {
+        "preset": "three_quarter",
+        "dist": 6.0,
+        "target": [
+          0,
+          1.0,
+          0
+        ]
+      },
+      "text": "STICKMEN + PIXEL-MEN",
+      "size": 54,
+      "text_y": 0.9,
+      "highlight": {
+        "PIXEL-MEN": [
+          255,
+          46,
+          151
+        ]
+      },
+      "actors": [
+        {
+          "kind": "stickman",
+          "color": [
+            0,
+            240,
+            255
+          ],
+          "path": [
+            [
+              -4.6,
+              0
+            ],
+            [
+              -1.3,
+              0
+            ]
+          ],
+          "walk_speed": 1.8,
+          "speed": 0.92,
+          "actions": [
+            {
+              "motion": "walk",
+              "dur": 1.9
+            },
+            {
+              "motion": "wave"
+            }
+          ],
+          "say": [
+            {
+              "text": "Hi! I'm a stickman",
+              "start": 2.1,
+              "dur": 2.0
+            }
+          ]
+        },
+        {
+          "kind": "pixelman",
+          "x": 1.7,
+          "yaw": -25,
+          "color": [
+            255,
+            46,
+            151
+          ],
+          "enter": "drop",
+          "start": 0.8,
+          "actions": [
+            {
+              "motion": "idle",
+              "dur": 2.4
+            },
+            {
+              "motion": "wave"
+            }
+          ],
+          "say": [
+            {
+              "text": "Hey! I'm a pixel-man",
+              "start": 2.9,
+              "dur": 1.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "world3d",
+      "duration": 4.0,
+      "bg": 0,
+      "bg_style": "pixel_sky",
+      "transition": "pixelate",
+      "view": {
+        "preset": "iso",
+        "dist": 9.2,
+        "target": [
+          0,
+          0.8,
+          0
+        ]
+      },
+      "pixel": 4,
+      "floor": "checker",
+      "floor_ext": 10,
+      "text": "PIXEL-ART MODE",
+      "size": 54,
+      "text_y": 0.9,
+      "actors": [
+        {
+          "kind": "pixelman",
+          "x": -2.0,
+          "z": 0.4,
+          "color": [
+            0,
+            240,
+            255
+          ],
+          "motion": "dance",
+          "enter": "drop"
+        },
+        {
+          "kind": "pixelman",
+          "x": 0.0,
+          "z": -0.8,
+          "color": [
+            255,
+            46,
+            151
+          ],
+          "motion": "jump",
+          "start": 0.3,
+          "enter": "drop"
+        },
+        {
+          "kind": "pixelman",
+          "x": 2.0,
+          "z": 0.4,
+          "color": [
+            255,
+            210,
+            80
+          ],
+          "motion": "victory",
+          "start": 0.6,
+          "enter": "drop"
+        },
+        {
+          "kind": "voxels",
+          "x": 0.0,
+          "z": -3.2,
+          "voxel": 0.2,
+          "depth": 2,
+          "spin": 45,
+          "bob": 0.25,
+          "palette": {
+            "X": [
+              255,
+              46,
+              151
+            ]
+          },
+          "art": [
+            ".XX..XX.",
+            "XXXXXXXX",
+            "XXXXXXXX",
+            ".XXXXXX.",
+            "..XXXX..",
+            "...XX..."
+          ]
+        },
+        {
+          "kind": "tree",
+          "x": -3.6,
+          "z": -2.0,
+          "size": 1.3
+        },
+        {
+          "kind": "tree",
+          "x": 3.6,
+          "z": -2.2,
+          "size": 1.1
+        }
+      ]
+    },
+    {
+      "type": "world3d",
+      "duration": 4.0,
+      "bg": 1,
+      "bg_style": "stars",
+      "transition": "zoom",
+      "bloom": 0.55,
+      "view": {
+        "yaw": "24*sin(t*0.9)",
+        "pitch": 13,
+        "dist": 9.8,
+        "target": [
+          0,
+          1.35,
+          0
+        ]
+      },
+      "text": "VOXEL TEXT & PROPS",
+      "size": 54,
+      "text_y": 0.9,
+      "actors": [
+        {
+          "kind": "voxel_text",
+          "text": "AHMII LABS",
+          "size": 0.95,
+          "depth": 3,
+          "px": 22,
+          "z": -0.8,
+          "colors": [
+            [
+              255,
+              46,
+              151
+            ],
+            [
+              0,
+              240,
+              255
+            ]
+          ],
+          "enter": "drop",
+          "y": 1.55,
+          "bob": 0.12
+        },
+        {
+          "kind": "stickman",
+          "x": -3.1,
+          "z": 1.2,
+          "color": [
+            0,
+            240,
+            255
+          ],
+          "motion": "dance",
+          "yaw": 25,
+          "scale": 0.9
+        },
+        {
+          "kind": "pixelman",
+          "x": 3.1,
+          "z": 1.2,
+          "color": [
+            255,
+            46,
+            151
+          ],
+          "motion": "dance",
+          "yaw": -25,
+          "enter": "spin_in",
+          "start": 0.4,
+          "scale": 0.9
+        }
+      ]
+    },
+    {
+      "type": "logo_reveal",
+      "text": "Ahmii Labs",
+      "subtext": "Video Editor & Generator Skill — now with 3D",
+      "duration": 3.0,
+      "bg": 0,
+      "bg_style": "grid",
+      "transition": "flash",
+      "hold_end": true,
+      "highlight": {
+        "Labs": [
+          0,
+          240,
+          255
+        ]
+      },
+      "fx": [
+        {
+          "type": "glow",
+          "amount": 0.8
+        },
+        {
+          "type": "rgb_split",
+          "start": 0.0,
+          "dur": 0.4,
+          "pulse": true,
+          "distance": 12
+        }
+      ]
+    }
+  ]
+}
